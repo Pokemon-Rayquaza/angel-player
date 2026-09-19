@@ -1,6 +1,7 @@
 # Angel Player · 带星空的音乐播放器
 
 > A music player with a deep space starfield background.
+> ![preview](518.png)
 > 一个带有深空星野背景的音乐播放器。
 
 ---
