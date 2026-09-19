@@ -1,0 +1,27 @@
+[package]
+name = "angel-player"
+version = "0.1.0"
+description = "A music player with a deep space starfield background"
+authors = ["Pokemon-Rayquaza"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/Pokemon-Rayquaza/angel-player"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = [
+  "shell-execute",
+  "shell-open",
+  "dialog-all",
+  "fs-read-dir",
+  "fs-read-file",
+  "protocol-asset"
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.14"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
